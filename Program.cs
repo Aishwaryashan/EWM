@@ -4,19 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace uc3
+namespace uc5
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            int parttime = 4;
+            int days = 20;
             int wage = 20;
-            int fulltime = 8;
-
-            Console.WriteLine("Part time employee : " + (parttime * wage));
-            Console.WriteLine("By adding both full time and part time  : " + (parttime * wage + fulltime * wage));
+            Console.WriteLine("wages for a month :" + (days * wage));
             Console.ReadLine();
+
         }
     }
 }
