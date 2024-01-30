@@ -4,18 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace uc3
+namespace uc4
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            int parttime = 4;
-            int wage = 20;
-            int fulltime = 8;
-
-            Console.WriteLine("Part time employee : " + (parttime * wage));
-            Console.WriteLine("By adding both full time and part time  : " + (parttime * wage + fulltime * wage));
+            Console.WriteLine("Enter your role either Fulltime or Partime");
+            String role = Console.ReadLine();
+            switch (role)
+            {
+                case "Fulltime":
+                    Console.WriteLine("Your Wage is 160");
+                    break;
+                case "Partime":
+                    Console.WriteLine("Your wage is 80");
+                    break;
+            }
             Console.ReadLine();
         }
     }
