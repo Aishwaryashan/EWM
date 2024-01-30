@@ -4,28 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EmployeeWageComputation
+namespace uc2
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Employee Wage Computaion Program.");
-
-            Random random = new Random();
-            int attendance = random.Next(0, 2);
-
-            if (attendance == 1)
-            {
-                Console.WriteLine("Present");
-            }
-            else
-            {
-                Console.WriteLine("Absent");
-            }
-
-
+            int wage = 20;
+            int fullday = 8;
+            Console.WriteLine("Daily Employee wage : " + (wage * fullday));
             Console.ReadLine();
         }
+
+
+
+
+
     }
 }
